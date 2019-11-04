@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_playhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#9933CC"
+        android:onClick="showPlayHistory"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:text="Play history"
+        app:layout_constraintTop_toBottomOf="@+id/btn_newgame"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_topcharts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#CC3366"
+        android:onClick="showTopCharts"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:text="Top charts"
+        app:layout_constraintTop_toBottomOf="@+id/btn_playhistory"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_buycredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FF6600"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:onClick="showBuyCredit"
+        android:text="Buy credit"
+        app:layout_constraintTop_toBottomOf="@+id/btn_topcharts"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="163dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" levanhongan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+    <Button
+        android:id="@+id/btn_accountmanagement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="22sp"
+        android:text="Account management"
+        android:onClick="showAccountManagement"
+        android:background="#009900"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:layout_editor_absoluteX="159dp" />
+
+    <Button
+        android:id="@+id/btn_newgame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:background="#0099CC"
+        android:textColor="#FFFFFF"
+        android:onClick="showViewGame"
+        android:textSize="22sp"
+        android:layout_marginLeft="50dp"
+        android:text="New Game"
+        app:layout_constraintTop_toBottomOf="@+id/btn_accountmanagement"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="163dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/username_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="22sp"
+        android:hint="User name"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+    <EditText
+        android:id="@+id/password_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="22sp"
+        android:hint="Password"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_signin" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#0099FF"
+        android:textSize="22sp"
+        android:onClick="showMain"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/password_signin"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:id="@+id/btn_forgotpassword_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#663366"
+        android:textSize="22sp"
+        android:onClick="showForgotPassword"
+        android:text="Forgot password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:id="@+id/btn_register_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="24dp"
+        android:onClick="showRegisterAccount"
+        android:textSize="22sp"
+        android:background="#CC33CC"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/btn_forgotpassword_signin"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
