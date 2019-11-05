@@ -1,11 +1,10 @@
 package com.example.myapplication;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTopCharts(View view) {
-        Intent intent = new Intent(this, AccountManagement.class);
+        Intent intent = new Intent(this, UserAdapterTopCharts.class);
 
         this.startActivity(intent);
     }
